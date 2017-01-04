@@ -1,0 +1,38 @@
+.f{
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    background-color: #c3d9ff;
+    display: flex;
+}
+.s:nth-child(1){
+    background-color: #1E90FF;
+    flex: 1;
+}
+.s:nth-child(2){
+    background-color:pink;
+    flex: 2;
+}
+.s:nth-child(3){
+    background-color: greenyellow;
+    flex: 3;
+}
+.s:nth-child(4){
+    background-color: orange;
+    flex: 4;
+}
+.s:nth-last-child(1){
+    background-color: blueviolet;
+    flex: 5;
+}
+.s:hover{
+    flex: 9;
+    animation: mya 1s ease-out;
+}
+@keyframes mya {
+    0%{flex: 5}
+    25%{flex: 6}
+    50%{flex: 7}
+    75%{flex: 8}
+    100%{flex: 9}
+}
